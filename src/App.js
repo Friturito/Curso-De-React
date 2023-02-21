@@ -37,8 +37,16 @@ function App() {
           <hr />
           <Propiedades
             cadena="Esto es una cadena de texto"
-            numero={19}
+            numero={"19"}
             booleano={true}
+            arreglo={[1, 2, 3]}
+            objeto={{
+              nombre: "Friturito",
+              mail: "ricardo@gmail.com",
+            }}
+            funcion={(num) => num * num}
+            elementoReact={<i>Esto es un elemento React</i>}
+            componenteReact={<Componente msg="Soy un componente" />}
           />
         </section>
       </header>
