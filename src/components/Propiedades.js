@@ -1,4 +1,11 @@
 import React from "react";
+import PropTypes from "prop-types";
+
+/*
+Tipado para las propiedades de React en este plugin
+https://www.npmjs.com/package/prop-types
+*/
+
 
 export default function Propiedades(props) {
   return (
@@ -8,6 +15,11 @@ export default function Propiedades(props) {
         <li>{props.cadena}</li>
         <li>{props.numero}</li>
         <li>{props.booleano ? "Es verdadero" : "Es falso"}</li>
+        <li>{props.arreglo.join(",")}</li>
+        <li>{props.objeto.nombre + " | " + props.objeto.mail}</li>
+        <li>{props.arreglo.map(props.funcion).join(", ")}</li>
+        <li>{props.elementoReact}</li>
+        <li>{props.componenteReact}</li>
       </ul>
     </div>
   );
@@ -15,4 +27,8 @@ export default function Propiedades(props) {
 
 Propiedades.defaultProps = {
   porDefecto: "Las Props",
+};
+
+Propiedades.propTypes = {
+  numero: PropTypes.number,
 };
