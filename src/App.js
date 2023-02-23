@@ -3,6 +3,7 @@ import logo from "./logo.svg";
 import "./App.css";
 import Componente from "./components/Componente";
 import Propiedades from "./components/Propiedades";
+import Estado from "./components/Estado";
 
 function App() {
   let nombre = "Ricardo";
@@ -37,7 +38,7 @@ function App() {
           <hr />
           <Propiedades
             cadena="Esto es una cadena de texto"
-            numero={"19"}
+            numero={19}
             booleano={true}
             arreglo={[1, 2, 3]}
             objeto={{
@@ -48,6 +49,8 @@ function App() {
             elementoReact={<i>Esto es un elemento React</i>}
             componenteReact={<Componente msg="Soy un componente" />}
           />
+          <hr />
+          <Estado />
         </section>
       </header>
     </div>
