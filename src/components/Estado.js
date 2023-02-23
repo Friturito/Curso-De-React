@@ -17,11 +17,13 @@ export default class Estado extends Component {
       contandor: 0,
     };
     //Cambiar al estado
+    /*
     setInterval(() => {
       this.setState({
         contandor: this.state.contandor + 1,
       });
     }, 1000);
+  */
   }
   render() {
     return (
