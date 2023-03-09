@@ -67,3 +67,37 @@ export class EventosES7 extends Component {
     );
   }
 }
+/* function Boton(props) {
+  return <button onClick={props.myOnClick}>Botón hecho componente</button>;
+} */
+
+/* const Boton = (props) => (
+  <button onClick={props.myOnClick}>Botón hecho componente</button>
+); */
+
+const Boton = ({ myOnClick }) => (
+  <button onClick={myOnClick}>Botón hecho componente</button>
+);
+
+export class MasSobreEvento extends Component {
+  handleClick = (e, mensaje) => {
+    console.log(e);
+    console.log(e.nativeEvent);
+    console.log(e.target);
+  };
+
+  render() {
+    return (
+      <div>
+        <h2>Mas Sobre Eventos</h2>
+        <button onClick={(e) => this.handleClick(e, "Hola Pasando parametro")}>
+          Saludar
+        </button>
+        {/* Eventos Personalizado */}
+        <Boton
+          myOnClick={(e) => this.handleClick(e, "Hola Pasando parametro")}
+        />
+      </div>
+    );
+  }
+}
