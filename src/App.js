@@ -9,6 +9,7 @@ import RenderizadoElementos from "./components/RenderizadoElementos";
 import { EventosES6, EventosES7, MasSobreEvento } from "./components/Eventos";
 import ComunicacionComponentes from "./components/ComunicacionComponentes"
 import CicloVida from "./components/CicloVida";
+import AjaxApis from "./components/AjaxApis";
 
 function App() {
   let nombre = "Ricardo";
@@ -70,6 +71,8 @@ function App() {
           <ComunicacionComponentes/>
           <hr />
           <CicloVida/>
+          <hr/>
+          <AjaxApis/>
         </section>
       </header>
     </div>
