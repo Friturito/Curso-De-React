@@ -10,6 +10,10 @@ import { EventosES6, EventosES7, MasSobreEvento } from "./components/Eventos";
 import ComunicacionComponentes from "./components/ComunicacionComponentes"
 import CicloVida from "./components/CicloVida";
 import AjaxApis from "./components/AjaxApis";
+import ContadorHooks from "./components/contadorHooks";
+import ScrollHooks from "./components/ScrollHooks";
+import RelojHooks from "./components/RelojHooks";
+import AjaxHooks from "./components/AjaxHooks";
 
 function App() {
   let nombre = "Ricardo";
@@ -73,6 +77,14 @@ function App() {
           <CicloVida/>
           <hr/>
           <AjaxApis/>
+          <hr/>
+          <ContadorHooks titulo="Seguidores"/>
+          <hr/>
+          <ScrollHooks/>
+          <hr/>
+          <RelojHooks/>
+          <hr/>
+          <AjaxHooks/>
         </section>
       </header>
     </div>
