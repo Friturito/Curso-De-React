@@ -16,6 +16,8 @@ import RelojHooks from "./components/RelojHooks";
 import AjaxHooks from "./components/AjaxHooks";
 import HooksPersonalizado from "./components/HooksPersonalizados";
 import Referencias from "./components/Refencias";
+import Formularios from "./components/Formularios";
+import Estilos from "./components/Estilos";
 
 
 function App() {
@@ -29,8 +31,8 @@ function App() {
         <p>
           Editar <code>src/App.js</code> y guarda para recargar.
         </p>
-        <label htmlFor="nombre">Nombre</label>
-        <input id="nombre" />
+        <label htmlFor="Nombre">Nombre</label>
+        <input id="Nombre" />
         <p>Hola, {nombre} </p>
         <p>{auth ? "Autorizado" : "No estas Autorizado"}</p>
         <ul>
@@ -92,6 +94,20 @@ function App() {
           <HooksPersonalizado/>
           <hr/>
           <Referencias/>
+          <hr/>
+          <Formularios/>
+          <hr/>
+          <Estilos/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
         </section>
       </header>
     </div>
